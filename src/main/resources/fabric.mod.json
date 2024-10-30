@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "androids-expansion",
+	"version": "${version}",
+	"name": "Androids Expansion",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Androidc4"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/androids-expansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.androidc4.androids_expansion.AndroidsExpansion"
+		],
+		"client": [
+			"net.androidc4.androids_expansion.AndroidsExpansionClient"
+		],
+		"fabric-datagen": [
+			"net.androidc4.androids_expansion.AndroidsExpansionDataGenerator"
+		]
+	},
+	"mixins": [
+		"androids-expansion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
